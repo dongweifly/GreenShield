@@ -1,0 +1,8 @@
+Env = "prod"
+HttpServerAddr = ":8088"
+UseRepo = "FILE"
+
+DBAddress = ""
+
+[SensitiveRepo]
+

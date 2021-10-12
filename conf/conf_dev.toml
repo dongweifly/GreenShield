@@ -1,0 +1,10 @@
+Env = "dev"
+HttpServerAddr = ":8088"
+
+UseRepo = "DB"
+
+DBAddress = ""
+
+[SensitiveRepo]
+
+

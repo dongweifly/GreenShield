@@ -1,0 +1,6 @@
+Env = "prod"
+HttpServerAddr = ":8088"
+UseRepo = "DB"
+
+DBAddress = ""
+

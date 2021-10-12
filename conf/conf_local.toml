@@ -1,0 +1,10 @@
+Env = "local"
+HttpServerAddr = ":8088"
+#使用哪一个存储仓库, DB: 从数据中拉取词库; FILE: 从本地文件中拉词库；
+#UseRepo = "DB"
+UseRepo = "DB"
+
+# 数据库配置
+DBAddress = "root:greenshield123@tcp(127.0.0.1)/green_shield?charset=utf8mb4&parseTime=True&loc=Local"
+
+
