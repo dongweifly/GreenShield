@@ -39,13 +39,21 @@ cd your_install_path
 
 **配置文件说明**
 ```toml 
-Env = "dev"  # 指定运行环境
-HttpServerAddr = ":8088"
+Env = "dev"  # 指定运行环境，日志打印会有所区别；
+
+HttpServerAddr = ":8088"  # 指定服务端口；
 
 UseRepo = "DB"
 
-DBAddress = "
+# 填写你自己的数据地址信息；
+DBAddress = "YourUserName:YourPassword@tcp(127.0.0.1)/green_shield?charset=utf8mb4&parseTime=True&loc=Local" 
+
 ```
+**配置数据库**
+如果使用数据库来存储敏感词，首先要建好表。建表语句在：
+```GreenShield/resource/CreateTable.sql```
+
+## 服务使用
 
 **HTTP API**
 服务请求
@@ -81,6 +89,8 @@ resp
 ```
 
 [详细的接口文档](./api.md)
+
+除了服务接口后，还有大量的前端交互接口，因为涉及到不同的部署环境，前端代码暂不开源；有需要，可[Contact ME](dongwei.fly@gmail.com)
 
 ## RoadMap
 
