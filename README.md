@@ -19,8 +19,11 @@
 ```bash
 green_shield -c /opt/green_shield/conf/conf_dev.toml -s /opt/green_shield/sensitive-words
 ```
+`-c` : 指定配置文件
 
-也可以使用已经写好的脚本的来编译部署
+`-s` : 指定词库所在的目录，green_shield会扫描目录下的所有敏感词文件，但不会扫描子目录；如果配置文件中指定了是数据库启动的方式，-s配置可以不用加；
+
+**使用脚本来部署启动**
 
 ```bash 
 # 默认安装到/opt/green_shield/green_shield, 如果需要修改安装目录，修改脚本中APP_HOME="/opt/green_shield/"即可；
@@ -32,6 +35,16 @@ cd your_install_path
 # Usage: ./deploy.sh green_shield {start|stop|online|offline|restart} [dev|pre|prod]
 # dev 使用测试环境的配置文件，conf_dev.toml; pre 使用预发环境
 ./deploy.sh green_shield start dev
+```
+
+**配置文件说明**
+```toml 
+Env = "dev"  # 指定运行环境
+HttpServerAddr = ":8088"
+
+UseRepo = "DB"
+
+DBAddress = "
 ```
 
 **HTTP API**
