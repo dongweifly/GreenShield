@@ -90,7 +90,7 @@ resp
 
 [详细的接口文档](./api.md)
 
-除了服务接口后，还有大量的前端交互接口，因为涉及到不同的部署环境，前端代码暂不开源；有需要，可[Contact ME](mailto:dongwei.fly@gmail.com)
+除了服务接口后，还有大量的前端交互接口，因为涉及到不同的部署环境，前端代码暂不开源；有需要，可[Contact Email](mailto:dongwei.fly@gmail.com)
 
 ## RoadMap
 
